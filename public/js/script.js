@@ -906,7 +906,7 @@ function _covidInfo() {
             deathDisplay.dataset.target = myanmar.TotalDeaths;
             confirmDisplay.dataset.target = myanmar.TotalConfirmed;
             displays = document.querySelectorAll(".display");
-            speed = 1500;
+            speed = 2000;
             displays.forEach(function (display) {
               var updateCount = function updateCount() {
                 var target = +display.getAttribute("data-target");

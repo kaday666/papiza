@@ -29,7 +29,7 @@ async function covidInfo() {
     confirmDisplay.dataset.target = myanmar.TotalConfirmed;
 
     const displays = document.querySelectorAll(".display");
-    const speed = 1500;
+    const speed = 2000;
 
     displays.forEach((display) => {
         const updateCount = () => {
@@ -37,7 +37,7 @@ async function covidInfo() {
             const count = +display.innerHTML;
             const inc = Math.round(target / speed);
 
-            if (count < target) {
+            if (count < target) {   
                 display.innerHTML = count + inc;
                 setTimeout(updateCount, 1);
             } else {
